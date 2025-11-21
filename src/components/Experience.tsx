@@ -70,7 +70,7 @@ const Experience: React.FC = () => (
               </span>
             </h3>
             <a
-              href="../resume.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="Christopher_Di_Prima_Resume.pdf"
@@ -96,7 +96,7 @@ const Experience: React.FC = () => (
           <div className="w-full flex flex-col items-center gap-4">
             <div className="w-full flex justify-center">
               <iframe
-                src="../resume.pdf"
+                src="/resume.pdf"
                 title="Resume Preview"
                 width="350"
                 height="500"
