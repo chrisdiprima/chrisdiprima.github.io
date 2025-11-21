@@ -44,12 +44,6 @@ const Education: React.FC = () => (
             </span>
             , which has fueled my passion for these fields.
           </p>
-          <p className="mb-2">
-            I have participated in group projects, hackathons, and research
-            opportunities that have helped me develop both technical and
-            teamwork skills. I am always looking for ways to apply what I learn
-            in the classroom to real-world problems.
-          </p>
           <p>
             My goal is to graduate with a deep understanding of how technology
             can be used to innovate and improve our world, especially in the

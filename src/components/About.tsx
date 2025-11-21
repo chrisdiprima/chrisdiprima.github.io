@@ -7,7 +7,7 @@ const About: React.FC = () => (
       <h2 className="text-3xl font-bold mb-6 text-left text-blue-900 drop-shadow">
         About Me
       </h2>
-      <div className="flex flex-col lg:flex-row gap-12 w-full">
+      <div className="flex flex-col lg:flex-row gap-12 w-full items-center">
         <div className="flex-1 text-lg text-gray-700 text-left mb-8 w-full max-w-none">
           <p className="mb-4">
             Hi! I'm{" "}
@@ -21,7 +21,10 @@ const About: React.FC = () => (
             .
           </p>
           <p className="mb-4">
-            My academic journey is focused on{" "}
+            My academic journey is focused on learning new skills and
+            technologies within the realm of computer science and software
+            engineering, I have a passion and interest for new and emerging
+            technologies including{" "}
             <span className="inline-flex items-center gap-1">
               <Brain className="inline w-5 h-5 text-purple-600" /> Artificial
               Intelligence
@@ -37,23 +40,23 @@ const About: React.FC = () => (
             create a positive impact.
           </p>
           <p className="mb-4">
-            At York, I've developed a strong foundation in programming,
-            algorithms, and data analysis. I enjoy collaborating with others on
-            innovative projects and am always eager to learn new skills, whether
-            it's a new programming language or the latest trends in tech.
-          </p>
-          <p className="mb-4">
-            My goal is to build intelligent systems that make life easier,
-            safer, and more efficient. I am especially interested in the
-            intersection of AI and finance, where I believe there is huge
-            potential for innovation.
-          </p>
-          <p>
-            Outside of academics, I enjoy challenging myself and finding balance
-            through a variety of interests:
+            At York University, I've developed a strong foundation in
+            programming, algorithms, and data structures. I enjoy collaborating
+            with others on innovative projects and am always eager to learn new
+            skills, whether it's a new programming language or the latest trends
+            in tech.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-8 w-full max-w-md mx-auto mt-8 place-items-center">
+
+        <div className="grid grid-cols-2 gap-8 w-full max-w-md h-fit place-items-center">
+          <div className="aspect-square flex flex-col items-center justify-center bg-gradient-to-br from-blue-100/60 to-purple-100/40 rounded-2xl p-2 text-center shadow hover:scale-105 transition-transform w-full max-w-[200px] h-[200px] mx-auto">
+            <p className="text-md">
+              Outside of academics, I enjoy challenging myself and finding
+              balance through a variety of interests and hobbies including:
+
+            </p>
+          </div>
+
           <div className="aspect-square flex flex-col items-center justify-center bg-gradient-to-br from-blue-100/60 to-purple-100/40 rounded-2xl p-6 shadow hover:scale-105 transition-transform w-full max-w-[200px] h-[200px] mx-auto">
             <Dumbbell className="w-8 h-8 text-blue-700 mb-2" />
             <span className="font-semibold text-blue-800">
