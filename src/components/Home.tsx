@@ -6,6 +6,7 @@ import Main from "./Hero";
 import Education from "./Education";
 import About from "./About";
 import Experience from "./Experience";
+import Goals from "./Goals";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <Education />
       <About />
       <Experience />
+      <Goals />
       <Projects />
       <Contact />
       <Footer />

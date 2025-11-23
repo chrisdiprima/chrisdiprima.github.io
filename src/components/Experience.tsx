@@ -2,9 +2,9 @@ import React from "react";
 
 const Experience: React.FC = () => (
   <section id="experience" className="py-16 px-4">
-    <div className="max-w-5xl mx-auto bg-white/80 rounded-3xl shadow-xl border border-[#b0abb9]/30 p-12 relative">
+    <div className="max-w-6xl mx-auto rounded-3xl shadow-xl bg-white/70 backdrop-blur-md border border-[#b0abb9]/30 p-4 sm:p-8 md:p-16 lg:p-16 relative">
       <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-24 h-2 bg-gradient-to-r from-purple-400 via-blue-400 to-indigo-400 rounded-full opacity-60"></div>
-      <h2 className="text-3xl font-bold mb-6 text-center text-purple-900 drop-shadow">
+      <h2 className="text-3xl font-bold mb-6 text-left text-purple-900 drop-shadow">
         Experience
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
