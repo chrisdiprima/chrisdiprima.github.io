@@ -1,23 +1,23 @@
 const Hero = () => (
   <section
     id="hero"
-    className="relative py-32 md:py-44 px-4 flex items-center justify-center min-h-[70vh] text-gray-900"
+    className="relative py-36 md:py-52 px-4 flex items-center justify-center min-h-[80vh] md:min-h-[85vh] text-gray-900"
     style={{
       background:
         "linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)",
-      boxShadow: "0 8px 32px 0 rgba(102, 126, 234, 0.25) inset",
-      borderBottomLeftRadius: "3rem",
-      borderBottomRightRadius: "3rem",
+      boxShadow: "0 10px 40px 0 rgba(102, 126, 234, 0.3) inset",
+      borderBottomLeftRadius: "4rem",
+      borderBottomRightRadius: "4rem",
       position: "relative",
       overflow: "hidden",
     }}
   >
     {/* Animated gradient overlay */}
     <div
-      className="absolute inset-0 opacity-30"
+      className="absolute inset-0 opacity-40"
       style={{
         background:
-          "radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 50%)",
+          "radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.3) 0%, transparent 50%)",
         animation: "pulse 8s ease-in-out infinite",
       }}
     />
@@ -26,7 +26,7 @@ const Hero = () => (
     <svg
       width="100%"
       height="100%"
-      className="absolute inset-0 opacity-10 z-0"
+      className="absolute inset-0 opacity-[0.15] z-0"
       style={{ pointerEvents: "none" }}
     >
       <defs>
@@ -42,58 +42,59 @@ const Hero = () => (
             d="M25 0L50 12.5V37.5L25 50L0 37.5V12.5z"
             fill="none"
             stroke="white"
-            strokeWidth="1"
+            strokeWidth="1.5"
           />
         </pattern>
       </defs>
       <rect width="100%" height="100%" fill="url(#hexagons)" />
     </svg>
 
-    {/* Floating accent circles */}
+    {/* Floating accent circles with glow */}
     <div
-      className="absolute top-10 left-10 w-32 h-32 bg-white/20 rounded-full blur-3xl animate-bounce-slow"
-      style={{ animationDelay: "0s", animationDuration: "6s" }}
+      className="absolute top-10 left-10 w-40 h-40 bg-white/30 rounded-full blur-3xl animate-bounce-slow"
+      style={{ animationDelay: "0s", animationDuration: "6s", filter: "blur(80px)" }}
     />
     <div
-      className="absolute bottom-20 right-20 w-40 h-40 bg-purple-300/20 rounded-full blur-3xl animate-bounce-slow"
-      style={{ animationDelay: "2s", animationDuration: "8s" }}
+      className="absolute bottom-20 right-20 w-52 h-52 bg-purple-300/30 rounded-full blur-3xl animate-bounce-slow"
+      style={{ animationDelay: "2s", animationDuration: "8s", filter: "blur(100px)" }}
     />
     <div
-      className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-300/20 rounded-full blur-2xl animate-bounce-slow"
-      style={{ animationDelay: "4s", animationDuration: "7s" }}
+      className="absolute top-1/2 left-1/4 w-32 h-32 bg-blue-300/30 rounded-full blur-2xl animate-bounce-slow"
+      style={{ animationDelay: "4s", animationDuration: "7s", filter: "blur(60px)" }}
     />
 
-    <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
-      <div className="mb-6 inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 text-white font-semibold text-sm tracking-wide">
+    <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+      <div className="mb-8 inline-block px-8 py-3 bg-white/25 backdrop-blur-md rounded-full border-2 border-white/40 text-white font-bold text-sm md:text-base tracking-wider shadow-lg hover:scale-105 transition-transform duration-300">
         ✨ EPORTFOLIO 2025
       </div>
       <h1
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tight text-white drop-shadow-2xl"
+        className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 tracking-tight text-white drop-shadow-2xl"
         style={{
           textShadow:
-            "0 0 30px rgba(255,255,255,0.3), 0 4px 20px rgba(0,0,0,0.3)",
+            "0 0 40px rgba(255,255,255,0.4), 0 6px 30px rgba(0,0,0,0.4)",
+          letterSpacing: "-0.02em",
         }}
       >
         Christopher Di Prima
       </h1>
       <p
-        className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 text-white max-w-3xl mx-auto drop-shadow-lg"
+        className="text-lg md:text-xl lg:text-2xl font-bold mb-10 text-white/95 max-w-3xl mx-auto drop-shadow-xl"
         style={{
-          textShadow: "0 2px 10px rgba(0,0,0,0.2)",
+          textShadow: "0 3px 15px rgba(0,0,0,0.3)",
         }}
       >
-        Software Developer <span className="text-cyan-300">•</span> York
-        University <span className="text-cyan-300">•</span> RBC Co-op
+        Software Developer <span className="text-cyan-300 text-2xl md:text-3xl">•</span> York
+        University <span className="text-cyan-300 text-2xl md:text-3xl">•</span> RBC Co-op
       </p>
-      <p className="text-base md:text-lg text-white/95 mb-10 max-w-2xl mx-auto font-medium leading-relaxed backdrop-blur-sm bg-black/10 p-6 rounded-2xl border border-white/20">
+      <p className="text-sm md:text-base lg:text-lg text-white/95 mb-12 max-w-2xl mx-auto font-medium leading-relaxed backdrop-blur-md bg-white/15 p-8 rounded-3xl border-2 border-white/30 shadow-2xl">
         Welcome to my professional ePortfolio. Discover my journey as a
         developer, my academic background, and the projects that showcase my
         passion for building impactful technology solutions.
       </p>
-      <div className="flex flex-col sm:flex-row gap-4 items-center">
+      <div className="flex flex-col sm:flex-row gap-5 items-center">
         <a
           href="#projects"
-          className="inline-flex items-center gap-2 bg-white text-purple-700 font-bold text-lg px-10 py-4 rounded-full shadow-2xl hover:bg-purple-100 hover:text-purple-900 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300/50"
+          className="inline-flex items-center gap-3 bg-white text-purple-700 font-bold text-base md:text-lg px-12 py-5 rounded-full shadow-2xl hover:bg-purple-50 hover:text-purple-900 hover:scale-110 hover:shadow-purple-300/50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300/60"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +114,7 @@ const Hero = () => (
         </a>
         <a
           href="#contact"
-          className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-bold text-lg px-10 py-4 rounded-full shadow-xl hover:bg-white hover:text-purple-700 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white/50"
+          className="inline-flex items-center gap-3 bg-transparent border-3 border-white text-white font-bold text-base md:text-lg px-12 py-5 rounded-full shadow-2xl hover:bg-white hover:text-purple-700 hover:scale-110 hover:shadow-white/50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white/60 backdrop-blur-sm"
         >
           Get In Touch
         </a>

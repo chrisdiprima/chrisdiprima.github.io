@@ -2,7 +2,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Main", href: "#main" },
   { label: "Education", href: "#education" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
