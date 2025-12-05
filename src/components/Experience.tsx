@@ -1,17 +1,18 @@
-import React from "react";
+import { Briefcase } from "lucide-react";
 
-const Experience: React.FC = () => (
+const Experience = () => (
   <section id="experience" className="py-16 px-4">
-    <div className="max-w-6xl mx-auto rounded-3xl shadow-xl bg-white/70 backdrop-blur-md border border-[#b0abb9]/30 p-4 sm:p-8 md:p-16 lg:p-16 relative">
-      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-24 h-2 bg-gradient-to-r from-purple-400 via-blue-400 to-indigo-400 rounded-full opacity-60"></div>
-      <h2 className="text-3xl font-bold mb-6 text-left text-purple-900 drop-shadow">
+    <div className="max-w-6xl mx-auto rounded-3xl shadow-2xl bg-gradient-to-br from-white/80 to-purple-50/70 backdrop-blur-md border-2 border-purple-300/50 p-8 sm:p-10 md:p-16 lg:p-16 relative">
+      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-32 h-3 bg-gradient-to-r from-purple-500 via-blue-500 to-indigo-500 rounded-full opacity-80 shadow-lg"></div>
+      <h2 className="text-3xl font-bold mb-6 text-left text-purple-900 drop-shadow flex items-center gap-3">
+        <Briefcase className="w-8 h-8" />
         Experience
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         {/* Experience */}
         <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0e7ef]/80 to-[#b0abb9]/60 shadow border border-[#b0abb9]/20 flex flex-col">
-          <h3 className="text-3xl font-extrabold mb-4 text-purple-900 tracking-tight flex items-center gap-2">
-            <span className="inline-block bg-purple-200 text-purple-800 rounded px-3 py-1 text-lg font-bold">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-4 text-purple-900 tracking-tight flex items-center gap-2">
+            <span className="inline-block bg-purple-200 text-purple-800 rounded px-2 py-1 text-sm sm:text-base md:text-lg font-bold">
               Experience
             </span>
           </h3>
@@ -63,9 +64,9 @@ const Experience: React.FC = () => (
         </div>
         {/* Resume */}
         <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0e7ef]/80 to-[#b0abb9]/60 shadow border border-[#b0abb9]/20 flex flex-col items-center justify-center">
-          <div className="flex items-center justify-between w-full mb-4 gap-2">
-            <h3 className="text-3xl font-extrabold text-purple-900 tracking-tight flex items-center gap-2 m-0">
-              <span className="inline-block bg-purple-200 text-purple-800 rounded px-3 py-1 text-lg font-bold">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mb-4 gap-3">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-purple-900 tracking-tight flex items-center gap-2 m-0">
+              <span className="inline-block bg-purple-200 text-purple-800 rounded px-2 py-1 text-sm sm:text-base md:text-lg font-bold">
                 Resume
               </span>
             </h3>
@@ -74,7 +75,7 @@ const Experience: React.FC = () => (
               target="_blank"
               rel="noopener noreferrer"
               download="Christopher_Di_Prima_Resume.pdf"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold px-5 py-2 rounded-lg shadow hover:from-purple-700 hover:to-indigo-700 transition-colors text-base "
+              className="inline-flex items-center gap-1 sm:gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-lg shadow hover:from-purple-700 hover:to-indigo-700 transition-colors text-sm sm:text-base whitespace-nowrap"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,13 +95,11 @@ const Experience: React.FC = () => (
             </a>
           </div>
           <div className="w-full flex flex-col items-center gap-4">
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center overflow-hidden">
               <iframe
                 src="/resume.pdf"
                 title="Resume Preview"
-                width="350"
-                height="500"
-                className="border-2 border-purple-200 rounded-lg shadow bg-white transition-all duration-300 hover:scale-[1.02]"
+                className="border-2 border-purple-200 rounded-lg shadow bg-white transition-all duration-300 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] h-[400px] sm:h-[450px] md:h-[500px]"
               />
             </div>
           </div>

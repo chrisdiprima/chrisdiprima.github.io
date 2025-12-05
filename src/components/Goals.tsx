@@ -1,11 +1,10 @@
-import React from "react";
 import { Target, TrendingUp, Users } from "lucide-react";
 
-const Goals: React.FC = () => (
+const Goals = () => (
   <section id="goals" className="py-16 px-4">
-    <div className="max-w-6xl mx-auto rounded-3xl shadow-xl bg-white/70 backdrop-blur-md border border-[#b0abb9]/30 p-4 sm:p-8 md:p-16 lg:p-16 relative">
-      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-24 h-2 bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 rounded-full opacity-60"></div>
-      <h2 className="text-3xl font-bold mb-6 text-left text-green-900 drop-shadow">
+    <div className="max-w-6xl mx-auto rounded-3xl shadow-2xl bg-gradient-to-br from-white/80 to-green-50/70 backdrop-blur-md border-2 border-green-300/50 p-8 sm:p-10 md:p-16 lg:p-16 relative">
+      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-32 h-3 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 rounded-full opacity-80 shadow-lg"></div>
+      <h2 className="text-3xl font-bold mb-6 text-left text-green-900 drop-shadow-lg">
         My Goals
       </h2>
       <div className="mb-8 text-lg text-gray-700">
@@ -19,7 +18,7 @@ const Goals: React.FC = () => (
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {/* Goal 1 */}
-        <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0f2e9]/80 to-[#b8e6cc]/60 shadow border border-green-200/30 flex flex-col items-center text-center hover:scale-105 transition-transform">
+        <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0f2e9]/90 to-[#b8e6cc]/70 shadow-lg border-2 border-green-300/50 flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
           <div className="bg-green-100 rounded-full p-4 mb-4">
             <Target className="w-8 h-8 text-green-700" />
           </div>
@@ -34,7 +33,7 @@ const Goals: React.FC = () => (
         </div>
 
         {/* Goal 2 */}
-        <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0f2e9]/80 to-[#b8e6cc]/60 shadow border border-green-200/30 flex flex-col items-center text-center hover:scale-105 transition-transform">
+        <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0f2e9]/90 to-[#b8e6cc]/70 shadow-lg border-2 border-green-300/50 flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
           <div className="bg-emerald-100 rounded-full p-4 mb-4">
             <TrendingUp className="w-8 h-8 text-emerald-700" />
           </div>
@@ -49,7 +48,7 @@ const Goals: React.FC = () => (
         </div>
 
         {/* Goal 3 */}
-        <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0f2e9]/80 to-[#b8e6cc]/60 shadow border border-green-200/30 flex flex-col items-center text-center hover:scale-105 transition-transform">
+        <div className="rounded-xl p-6 bg-gradient-to-br from-[#e0f2e9]/90 to-[#b8e6cc]/70 shadow-lg border-2 border-green-300/50 flex flex-col items-center text-center hover:scale-105 hover:shadow-2xl transition-all duration-300">
           <div className="bg-teal-100 rounded-full p-4 mb-4">
             <Users className="w-8 h-8 text-teal-700" />
           </div>

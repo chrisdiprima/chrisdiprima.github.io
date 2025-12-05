@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background gradient animation */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 50%, #e0c3fc 100%);
+  background-attachment: fixed;
+}

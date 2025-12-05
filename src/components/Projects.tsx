@@ -1,11 +1,11 @@
-import React from "react";
-import { Github } from "lucide-react";
+import { Github, Folder } from "lucide-react";
 
-const Projects: React.FC = () => (
+const Projects = () => (
   <section id="projects" className="py-16 px-4">
-    <div className="max-w-6xl mx-auto rounded-3xl shadow-xl bg-white/70 backdrop-blur-md border border-[#b0abb9]/30 p-4 sm:p-8 md:p-16 lg:p-16 relative">
-      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-24 h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full opacity-60"></div>
-      <h2 className="text-3xl font-bold mb-6 text-left text-blue-900 drop-shadow">
+    <div className="max-w-6xl mx-auto rounded-3xl shadow-2xl bg-gradient-to-br from-white/80 to-pink-50/70 backdrop-blur-md border-2 border-pink-300/50 p-8 sm:p-10 md:p-16 lg:p-16 relative">
+      <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-32 h-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-80 shadow-lg"></div>
+      <h2 className="text-3xl font-bold mb-6 text-left text-blue-900 drop-shadow flex items-center gap-3">
+        <Folder className="w-8 h-8" />
         Projects
       </h2>
       <div className="mb-8 text-lg text-gray-700">
@@ -19,7 +19,7 @@ const Projects: React.FC = () => (
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {/* Project 1 */}
-        <div className="rounded-xl bg-gradient-to-br from-[#e0e7ef]/80 to-[#b0abb9]/60 shadow border border-[#b0abb9]/20 flex flex-col hover:scale-101 transition-transform overflow-hidden">
+        <div className="rounded-xl bg-gradient-to-br from-[#e0e7ef]/90 to-[#b0abb9]/70 shadow-lg border-2 border-purple-200/50 flex flex-col hover:scale-105 hover:shadow-2xl transition-all duration-300 overflow-hidden">
           <div className="w-full h-48 bg-gray-200 overflow-hidden">
             <img src="/project1.png" className="w-full h-full object-cover" />
           </div>
@@ -47,7 +47,7 @@ const Projects: React.FC = () => (
         </div>
 
         {/* Project 2 */}
-        <div className="rounded-xl bg-gradient-to-br from-[#e0e7ef]/80 to-[#b0abb9]/60 shadow border border-[#b0abb9]/20 flex flex-col hover:scale-101 transition-transform overflow-hidden">
+        <div className="rounded-xl bg-gradient-to-br from-[#e0e7ef]/90 to-[#b0abb9]/70 shadow-lg border-2 border-purple-200/50 flex flex-col hover:scale-105 hover:shadow-2xl transition-all duration-300 overflow-hidden">
           <div className="w-full h-48 bg-gray-200 overflow-hidden">
             <img src="/project2.png" className="w-full h-full object-cover" />
           </div>
@@ -57,9 +57,8 @@ const Projects: React.FC = () => (
             </h3>
             <p className="text-gray-700 text-base mb-4 flex-grow">
               A beautifully simple and customizable Chrome extension for saving,
-              organizing, and accessing your favorite sites. Perfect for
-              anyone who wants a better way to
-              manage their web life.
+              organizing, and accessing your favorite sites. Perfect for anyone
+              who wants a better way to manage their web life.
             </p>
             <div className="flex gap-3 mt-auto">
               <a
@@ -76,7 +75,7 @@ const Projects: React.FC = () => (
         </div>
 
         {/* Project 3 */}
-        <div className="rounded-xl bg-gradient-to-br from-[#e0e7ef]/80 to-[#b0abb9]/60 shadow border border-[#b0abb9]/20 flex flex-col hover:scale-101 transition-transform overflow-hidden">
+        <div className="rounded-xl bg-gradient-to-br from-[#e0e7ef]/90 to-[#b0abb9]/70 shadow-lg border-2 border-purple-200/50 flex flex-col hover:scale-105 hover:shadow-2xl transition-all duration-300 overflow-hidden">
           <div className="w-full h-48 bg-gray-200 overflow-hidden">
             <img src="/project3.png" className="w-full h-full object-cover" />
           </div>
@@ -85,10 +84,10 @@ const Projects: React.FC = () => (
               CS Tools - Chrome extension
             </h3>
             <p className="text-gray-700 text-base mb-4 flex-grow">
-              CS Chrome extension for developers and tech
-              enthusiasts, it provides quick access to a number system
-              converter, a bitwise calculator, and a Char to ASCII converter—all
-              in one convenient tool.
+              CS Chrome extension for developers and tech enthusiasts, it
+              provides quick access to a number system converter, a bitwise
+              calculator, and a Char to ASCII converter—all in one convenient
+              tool.
             </p>
             <div className="flex gap-3 mt-auto">
               <a
